@@ -1,11 +1,7 @@
-/**
- * 
- */
 package net.hgadgil.javatechtest;
 
 /**
  * @author hgadgil
- *
  */
 public class HelloWorld {
 
