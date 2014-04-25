@@ -1,3 +1,9 @@
+.gradle
+.gradletasknamecache
+build
+target
+.idea/
+
 *.class
 target
 

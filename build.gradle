@@ -1,0 +1,57 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+apply plugin: 'application'
+
+mainClassName = "net.hgadgil.javatechtest.HelloWorld"
+
+/*
+
+task calcClientScript(type: CreateStartScripts) {
+  applicationName = "calcClient"
+  mainClassName = "net.hgadgil.javatechtest.generated.calc.CalcService.CalcClient"
+}
+
+task calcServerScript(type: CreateStartScripts) {
+  applicationName = "calcServer"
+  mainClassName = "net.hgadgil.javatechtest.generated.calc.CalcService.CalcServer"
+}
+
+mainClassName = "net.hgadgil.javatechtest.generated.calc.CalcService.CalcAsyncClient"
+mainClassName = "net.hgadgil.javatechtest.generated.calc.CalcService.CalcNonBlockingClient"
+mainClassName = "net.hgadgil.javatechtest.generated.calc.CalcService.CalcNonBlockingServer"
+
+*/
+
+
+repositories {
+  mavenCentral()
+}
+
+sourceSets {
+  main {
+    java {
+      srcDir 'src/main/java'
+      srcDir 'src/main/generated'
+    }
+  }
+}
+
+jar {
+  baseName = 'java_tech_test'
+  version = '0.1.0'
+}
+
+
+dependencies {
+  compile "org.apache.thrift:libthrift:0.9.1"
+  compile "org.apache.commons:commons-lang3:3.0"
+  compile "org.slf4j:slf4j-api:1.7.6"
+  compile "io.dropwizard:dropwizard-core:0.7.0"
+
+  testCompile "junit:junit:4.11"
+}
+
+task wrapper(type: Wrapper) {
+  gradleVersion = '1.11'
+}
