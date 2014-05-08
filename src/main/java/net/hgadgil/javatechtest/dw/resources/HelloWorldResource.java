@@ -1,4 +1,4 @@
-package net.hgadgil.javatechtest.dw;
+package net.hgadgil.javatechtest.dw.resources;
 
 import java.util.concurrent.atomic.AtomicLong;
 

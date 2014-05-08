@@ -1,5 +1,7 @@
 package net.hgadgil.javatechtest.dw;
 
+import net.hgadgil.javatechtest.dw.health.TemplateHealthCheck;
+import net.hgadgil.javatechtest.dw.resources.HelloWorldResource;
 import io.dropwizard.Application;
 import io.dropwizard.setup.Bootstrap;
 import io.dropwizard.setup.Environment;

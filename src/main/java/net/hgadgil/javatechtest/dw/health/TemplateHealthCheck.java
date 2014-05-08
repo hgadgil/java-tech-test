@@ -1,4 +1,4 @@
-package net.hgadgil.javatechtest.dw;
+package net.hgadgil.javatechtest.dw.health;
 
 import com.codahale.metrics.health.HealthCheck;
 

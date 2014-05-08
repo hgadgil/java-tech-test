@@ -20,7 +20,7 @@ public class HelloWorldConfiguration extends Configuration {
 
 	@JsonProperty
 	public final void setTemplate(String template) {
-		this.template = template;
+		this.template = template;	
 	}
 
 	@JsonProperty

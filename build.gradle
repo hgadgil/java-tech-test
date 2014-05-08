@@ -2,8 +2,7 @@ apply plugin: 'java'
 apply plugin: 'eclipse'
 
 apply plugin: 'application'
-
-mainClassName = "net.hgadgil.javatechtest.HelloWorld"
+mainClassName = "net.hgadgil.javatechtest.dw.HelloWorldApplication"
 
 /*
 
